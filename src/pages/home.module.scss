@@ -1,1 +1,60 @@
 // TODO
+.container {
+  max-width: 700px;
+  margin:4rem auto;
+  img {
+    width: 238px;
+    height: 25px;
+    margin-bottom: 4.2rem;
+  }
+  
+  button {
+    width: 11rem;
+    height: 1.4rem;
+  
+    font: 600 18px "Inter"; 
+  
+    border: none;
+    background: transparent;
+    color: var(--pink-500);
+  
+    transition: filter 0.2s;
+  
+    &:hover{
+      filter: brightness(0.8);
+    }
+  }
+}
+
+.posts { 
+  margin-bottom: 4.2rem;
+  article {
+    strong {
+      color: var(--white-50);
+      font: 700  28px "Inter";
+
+      transition: color 0.2s;
+    }
+    p {
+      font: 400 18px "Inter";
+      color: var(--gray-100);
+      margin: 8px 0 24px 0;
+    }
+    .infoContainer {
+      width: 17rem;
+      color: var(--gray-300);
+
+      span {
+        &:first-child {
+          margin-right: 24px;
+        }
+      }
+    }
+    &:hover strong {
+      color: var(--pink-500)
+    }
+    & + article {
+      margin-top: 3.2rem;
+    }
+  }
+}
