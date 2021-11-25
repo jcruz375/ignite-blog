@@ -35,7 +35,14 @@
         & + li {
           margin-left: 1.625rem;
         }
+
       }
+    }
+    span { 
+      margin-top: 1.5rem;
+      color: var(--gray-100);
+      font: 600 0.875rem "Inter";
+      font-style: italic;
     }
   }
 
@@ -60,5 +67,37 @@
         margin:  0.5rem 0;
       }
     }
+  }
+
+}
+
+.hr {
+  border-color: rgba(40, 44, 52, 0.83);
+}
+.navigation {
+  margin-top: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    font: 400 1.2rem 'Inter';
+    color: #fff;
+    width: 15rem;
+    
+    span {
+      display: block;
+      margin-left: auto;
+      color: var(--pink-500);
+
+      transition: filter 0.2s;
+  
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+  a + a {
+    text-align: right;
   }
 }
