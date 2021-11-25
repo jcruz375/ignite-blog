@@ -72,6 +72,7 @@
 }
 
 .hr {
+  margin: 2rem 0;
   border-color: rgba(40, 44, 52, 0.83);
 }
 .navigation {
@@ -96,8 +97,10 @@
         filter: brightness(0.9);
       }
     }
-  }
-  a + a {
-    text-align: right;
+    &.nextPost{
+      display: block;
+      margin-left: auto;
+      text-align: right;
+    }
   }
 }
