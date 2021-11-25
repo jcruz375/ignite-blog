@@ -111,7 +111,7 @@ export default function Post({ post, navigation }: PostProps) {
                 <FiWatch /> {`${readTime} min`}
               </li>
             </ul>
-            {post.last_publication_date === post.first_publication_date
+            {post.last_publication_date !== post.first_publication_date
               ? (
                 <span className={styles.editDate}>
                   {formatedEditedDate}
